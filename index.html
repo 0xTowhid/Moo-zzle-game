@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moo-zzle Game</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div class="start-screen" id="startScreen">
+            <h1 class="game-title">Moo-zzle</h1>
+            <p class="subtitle">Choose Levels</p>
+            
+            <div class="difficulty-selector">
+                <button class="difficulty-btn" data-size="3">
+                    Easy<br><small>3×3</small>
+                </button>
+                <button class="difficulty-btn" data-size="4">
+                    Medium<br><small>4×4</small>
+                </button>
+                <button class="difficulty-btn active" data-size="5">
+                    Hard<br><small>5×5</small>
+                </button>
+            </div>
+            
+           
+            <button class="start-btn" id="startGameBtn">Let's Go </button>
+           <div class="creator"> <p class="publisher">Made with Care by <a href="https://x.com/0xTowhid" target="_blank" >0xTowhid</a></p></div>
+
+        </div>
+        
+
+        <!-- Game Screen -->
+        <div class="game-screen" id="gameScreen">
+            <div class="game-header">
+                <div class="game-info">
+                    <div class="info-item" id="timerDisplay"> Time: 00:00</div>
+                    <div class="info-item" id="movesDisplay"> Moves: 0</div>
+                </div>
+            </div>
+
+            <div class="puzzle-container">
+                <div class="puzzle-grid" id="puzzleGrid"></div>
+                <div class="particles" id="particles"></div>
+            </div>
+
+            <div class="controls">
+                <button class="control-btn" id="hintBtn"> Hint</button>
+                <button class="control-btn" id="newGameBtn"> Change</button>
+            </div>
+               <div class="creator"> <p class="publisher">Made with Care by <a href="https://x.com/0xTowhid" target="_blank" >0xTowhid</a></p></div>
+
+        </div>
+
+
+        <!-- Completion Screen -->
+        <div class="completion-screen" id="completionScreen">
+            <div class="completion-animation">
+                <img class="final-image" id="finalImage" src="" alt="Completed puzzle">
+            </div>
+            
+            <div class="completion-stats" id="completionStats">
+                Congratulations Sir,You have made it.<br>
+                <span id="finalTime">Time: 00:00</span><br>
+                <span id="finalMoves">Moves: 0</span>
+            </div>
+            
+            <div class="completion-actions">
+                <button class="action-btn play-again-btn" id="playAgainBtn"> Play Again?</button>
+                <a class="action-btn share-btn" id="shareBtn" href="#" target="_blank"> Share on X</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hint Modal -->
+    <div class="hint-modal" id="hintModal">
+        <div class="hint-content">
+            <img class="hint-image" id="hintImage" src="" alt="Solution">
+            <br>
+            <button class="control-btn" onclick="closeHint()">Close</button>
+        </div>
+    </div>
+    <script src="index.js">
+       
+    </script>
+</body>
+</html>
