@@ -250,7 +250,7 @@ class SlidingPuzzle {
         }, 100);
         
         // Setup share button
-        const shareText = `I just solved Moo-zzle game in ${this.formatTime(elapsed)} with ${this.moves} moves. Made with care by @0xTowhid`;
+        const shareText = `I just solved Moo-zzle game in ${this.formatTime(elapsed)} mintues with ${this.moves} moves. Made with care by @0xTowhid`;
         document.getElementById('shareBtn').href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
     }
 
